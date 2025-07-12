@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add New Item - ReWear</title>
+  <link rel="stylesheet" href="add_new_item.css" />
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://img.icons8.com/ios-filled/50/26e07f/t-shirt.png" alt="logo" />
+      <span>ReWear</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html#about">About</a></li>
+      <li><a href="#">Browse</a></li>
+      <li><a href="add_new_item.html">Add your item</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+    </ul>
+  </nav>
+
+  <!-- Add Item Form Container -->
+  <div class="form-container">
+    <h2>Add New Item</h2>
+    <form class="add-item-form">
+      <label for="images">Upload Images:</label>
+      <input type="file" id="images" name="images" accept="image/*" multiple>
+
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" placeholder="e.g. Red Cotton T-Shirt" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" placeholder="Describe your item..." required></textarea>
+
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="">Select Category</option>
+        <option value="tops">Tops</option>
+        <option value="bottoms">Bottoms</option>
+        <option value="ethnic">Ethnic</option>
+        <option value="winter">Winterwear</option>
+        <option value="footwear">Footwear</option>
+        <option value="accessories">Accessories</option>
+      </select>
+
+      <label for="type">Type:</label>
+      <select id="type" name="type" required>
+        <option value="">Select Type</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="unisex">Unisex</option>
+      </select>
+
+      <label for="size">Size:</label>
+      <input type="text" id="size" name="size" placeholder="e.g. M, L, 32, etc." required>
+
+      <label for="condition">Condition:</label>
+      <select id="condition" name="condition" required>
+        <option value="">Select Condition</option>
+        <option value="new">New</option>
+        <option value="like-new">Like New</option>
+        <option value="used">Used</option>
+        <option value="old">Old</option>
+      </select>
+
+      <label for="tags">Tags (comma-separated):</label>
+      <input type="text" id="tags" name="tags" placeholder="e.g. casual, cotton, summer">
+
+      <button type="submit">Submit Item</button>
+    </form>
+  </div>
+
+</body>
+</html>
