@@ -1,4 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  font-family: Arial, sans-serif;
+  background: #fefefe;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #26a69a;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 30px;
+  align-items: center;
+  background: #e0f2f1;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #00695c;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  object-fit: cover; 
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* About */
+.about {
+  padding: 60px 30px;
+  text-align: center;
+  background: #fff;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #004d40;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+.about img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+/* How It Works */
+.how-it-works {
+  background: #f1f8e9;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  color: #33691e;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.step {
+  max-width: 250px;
+}
+
+.step img {
+  width: 80px;
+}
+
+.step h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.step p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #004d40;
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-content div {
+  margin: 10px 20px;
+}
+
+.footer-content a {
+  color: #b2dfdb;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+/* body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f6f9f8;
@@ -62,4 +245,4 @@ footer {
     padding: 1rem;
     background: #eee;
     font-size: 0.9rem;
-}
+} */
