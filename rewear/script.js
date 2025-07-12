@@ -30,14 +30,7 @@ if (loginForm) {
     if (storedUser && storedUser.email === email && storedUser.password === password) {
       alert("Login successful!");
       localStorage.setItem("loggedIn", "true");
-
-      // ✅ Check if admin
-      if (email === "admin@gmail.com") {
-        window.location.href = "admin.html"; // go to admin page
-      } else {
-        window.location.href = "home.html"; // normal user home
-      }
-
+      window.location.href = "home.html";
     } else {
       alert("Invalid email or password.");
     }
