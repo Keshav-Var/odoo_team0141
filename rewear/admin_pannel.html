@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - ReWear</title>
+  <link rel="stylesheet" href="admin_pannel.css" />
+</head>
+<body>
+
+  <div class="admin-container">
+    <h2>Admin Panel</h2>
+
+    <!-- Tabs -->
+    <div class="admin-tabs">
+      <button class="tab-btn active" onclick="showTab('users')">Manage Users</button>
+      <button class="tab-btn" onclick="showTab('listings')">Manage Listings</button>
+      <button class="tab-btn" onclick="showTab('orders')">Manage Orders</button>
+    </div>
+
+    <!-- Tab Content: Users -->
+    <div class="tab-content" id="users">
+      <h3>Manage Users</h3>
+      <div class="admin-card">
+        <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="User" />
+        <div class="admin-details">
+          <p><strong>Name:</strong> Raj Mehta</p>
+          <p><strong>Email:</strong> raj@example.com</p>
+          <p><strong>Status:</strong> Active</p>
+        </div>
+        <div class="admin-actions">
+          <button class="remove-btn">Remove User</button>
+          <button class="status-btn">Change Role</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Content: Listings -->
+    <div class="tab-content" id="listings" style="display: none;">
+      <h3>Manage Listings</h3>
+      <div class="admin-card">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ_xwS3ia0PpkxQlwPOn9NboPFFmFLcdxOG1fvGoEn580RYdl5fHZZ-Ll5biXouYLhtR2PK4ygtAw9L7Dd4hKUqolXTH1mfbqOvz5LrRytD" alt="Item">
+        <div class="admin-details">
+          <p><strong>Item:</strong> Red T-Shirt</p>
+          <p><strong>User:</strong> Kavita Sharma</p>
+          <p><strong>Status:</strong> Active</p>
+        </div>
+        <div class="admin-actions">
+          <button class="remove-btn">Remove Item</button>
+          <button class="status-btn">Change Status</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Content: Orders -->
+    <div class="tab-content" id="orders" style="display: none;">
+      <h3>Manage Orders</h3>
+      <div class="admin-card">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ9ohPNHHkxnJ1FUawzb7upcMR8ZklchHQy9pNYsyOolRdS0hqiRIA_Mi7XDxhgPWt3EXGRiKWMw6mU-7JBhyOrvlYU7Jw-75_m_DG6TgIu" alt="Item">
+        <div class="admin-details">
+          <p><strong>Item:</strong> Blue Jeans</p>
+          <p><strong>Swapped By:</strong> Anjali Joshi</p>
+          <p><strong>Date:</strong> 2025-07-05</p>
+        </div>
+        <div class="admin-actions">
+          <button class="status-btn">Mark as Completed</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS for tab switching -->
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
+      document.getElementById(tabId).style.display = 'block';
+
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
